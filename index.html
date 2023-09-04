@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CRUD Operations</title>
+  </head>
+  <body>
+    <div class="formstyle">
+      <h2 style="text-align: center; color: black;" >CRUD Operations</h2>
+      <form>
+        <div class="inputs-up">
+          <div class="inputs-inner">
+            <label>Name</label>
+            <input type="text" id="name" class="input-e" />
+          </div>
+          <div class="inputs-inner">
+            <label>Mobile</label>
+            <input type="text" id="mobile" class="input-e" /><br />
+          </div>
+        </div>
+        <div class="inputs-down">
+          <div class="inputs-inner">
+            <label>Email</label>
+            <input type="text" id="email" class="input-e" />
+          </div>
+          <div class="inputs-inner">
+            <label>Address</label>
+            <input type="text" id="address" class="input-e" /> <br />
+          </div>
+        </div>
+        <div class="two-btn">
+        <input type="button" value="submit" id="btn-submit" onClick="addData()" class="two-btn-inner" />
+        <input type="button" value="update" id="btn-update" />
+        </div>
+        <!-- <input type="button" value="submit 2" id="btn 2" onclick="readnewData()"> -->
+      </form>
+      <table id="storelist" >
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Mobile</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody id="data-table"></tbody>
+      </table>
+    </div>
+  </body>
+  <!-- <script src="./script.js"></script> -->
+  <!-- <script src="./script2.js"></script> -->
+<!-- <script src="./script3.js"></script> -->
+<script src="./script4.js"></script>
+  </html>
+
